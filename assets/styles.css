@@ -184,7 +184,7 @@ button:hover{
     transition: all 0.3s ease-in-out;
 }
 .sectionTwo-myProjects-img >a> img{
-    width: 100%;
+    width: 90%;
     max-width: 100%;
     padding-left: 2rem;
     height: auto;
