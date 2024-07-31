@@ -1,0 +1,235 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontTwo)
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --fontOne: "Bricolage Grotesque", sans-serif;
+    --fontTwo: "Lora", sans-serif;
+    --fontThree: "Amsterdam",;
+    --colorNeutralOne: #FAF9F6;
+    --colorNeutralTwo: #FFF9FB;
+    --colorNeutralThree: #151E26;
+    --colorSecondary: #BC8F8F;
+    --colorAccentOne: #2406a9;
+    --colorAccentTwo: #DAA520;
+
+}
+h2{
+    font-family: var(--fontOne);
+    padding: 1rem;
+    color: var(--colorAccentTwo);
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.3rem;
+    color:var(--colorNeutralOne)
+}
+/* ---------------------------------------------- */
+/* header */
+.sectionOne{
+    background-color:var(--colorNeutralThree) ;
+    padding-bottom:2rem ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+/* header logo */
+.header_logo{
+    font-size: 2rem;
+    color: var(--colorAccentTwo);
+}
+/* header links */
+.header_header > span>a{
+    margin-left: 1rem;
+    color: var(--colorNeutralOne);
+}
+
+.header_header>span a{
+    text-decoration: none;
+  
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: var(--fontTwo);
+    text-transform: uppercase;
+
+    /* hover */
+    background-image: linear-gradient(to right, var(--colorAccentTwo),var(--colorAccentTwo) 50%,var(--colorNeutralOne) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.header_header>span a:before{
+       /* hover */
+       
+    content: "";
+    background: var(--colorAccentTwo);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+}
+.header_header>span a:hover{
+    background-position: 0;
+}
+
+/* ----------------------------------------- */
+.icons{
+    color:var(--colorAccentTwo);
+    margin-left: 0.5rem;
+    font-size:2rem;
+}
+.icons:hover{
+    color: var(--colorAccentOne);
+}
+
+.header_socialMedia{
+    padding-right: 2rem;
+}
+button{
+    background-color: var(--colorAccentOne); /* Green background */
+    border: none; /* Remove borders */
+    color: var(--colorNeutralOne); /* White text */
+    font-family: var(--fontOne);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem 2rem; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block */
+    font-size: 1rem; /* Set a font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 8px; /* Rounded corners */
+    transition-duration: 0.4s; /* Animation */
+}
+button:hover{
+    background-color: var(--colorNeutralOne); /* White background on hover */
+    color:var(--colorAccentTwo); /* Black text on hover */
+    border: 2px solid var(--colorAccentOne); /* Green border on hover */
+}
+/* -------------------------------------------------- */
+/* about me */
+.aboutMe{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.aboutMe-text{
+    padding: 2rem;
+    width: 50%;
+
+}
+.aboutMe-text>p{
+    font-size: 1.5rem;
+    font-family: var(--fontTwo);
+}
+.aboutMe-text>p>strong{
+    font-family: var(--fontOne);
+    color: var(--colorAccentTwo);
+}
+.aboutMe-img>img{
+    width: 30rem;
+    border-radius: 50%;
+}
+/* ------------------------------------------ */
+.sectionTwo{
+    background-color:var(--colorNeutralTwo) ;
+    padding-bottom:2rem ;
+}
+/* my projects */
+
+.sectionTwo-myProjects{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    gap:1rem;
+}
+.sectionTwo-myProjects-text{
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: 1.3rem;
+    padding: 2rem;
+    background-color: var(--colorNeutralThree);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    box-shadow: -10px -10px  var(--colorNeutralThree);
+    background-image: linear-gradient(to right,var(--colorNeutralTwo) , var(--colorNeutralOne))
+}
+
+.sectionTwo-myProjects-img:hover{
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+.sectionTwo-myProjects-img >a> img{
+    width: 100%;
+    max-width: 100%;
+    padding-left: 2rem;
+    height: auto;
+   
+}
+ul{
+    line-height: 2.5rem;
+    padding-left: 1rem;
+    list-style-type:circle;
+
+}
+
+
+
+
+/* footer */
+footer{
+    background-color:var(--colorNeutralThree) ;
+
+}
+.footer-text.copy{
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.icons-footer{
+    color:var(--colorAccentTwo);
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+.icons-footer:hover{
+    color: var(--colorAccentOne);
+}
+.footer-text{
+    color: var(--colorAccentTwo);
+    font-family: var(--fontTwo);
+}
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+}
+.footer-info-social{
+    text-align: center;
+}
